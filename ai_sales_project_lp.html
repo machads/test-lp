@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI販売プロジェクト</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.7;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .shadow-custom {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .student-results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .line-green-btn {
+            background-color: #07B53B !important;
+        }
+        .line-green-btn:hover {
+            background-color: #069e33 !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight text-black">
+                    AI販売プロジェクト
+                </h1>
+                <div class="mb-12">
+                    <img src="https://ringo.under.jp/AIproject/hero.jpg" alt="AI販売プロジェクト ヒーロー" class="w-full max-w-3xl mx-auto rounded-lg shadow-2xl">
+                </div>
+                <div class="line-green-btn text-white font-bold py-4 px-8 rounded-full text-lg inline-flex items-center hover:shadow-lg transition-all duration-300">
+                    <i class="fab fa-line mr-3"></i>
+                    今すぐLINEで無料相談
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-black mb-6">AI販売プロジェクトとは</h2>
+            </div>
+            
+            <div class="mb-12">
+                <div>
+                    <img src="https://ringo.under.jp/AIproject/about.jpg" alt="AI販売プロジェクトとは" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <img src="https://ringo.under.jp/AIproject/about2.jpg" alt="AI販売プロジェクトとは2" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            
+            <div class="results-grid mb-12">
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <img src="https://ringo.under.jp/AIproject/results.jpg" alt="実績データ1" class="w-full rounded-lg mb-4">
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <img src="https://ringo.under.jp/AIproject/results2.png" alt="実績データ2" class="w-full rounded-lg mb-4">
+                    <p class="text-sm text-gray-500 text-center">🔍 タップで拡大</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <img src="https://ringo.under.jp/AIproject/results3.png" alt="実績データ3" class="w-full rounded-lg mb-4">
+                    <p class="text-sm text-gray-500 text-center">🔍 タップで拡大</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Results Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            
+            <div class="student-results-grid">
+                <!-- Student Result 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://ringo.under.jp/AIproject/student-results1.jpg" alt="受講生実績1タイトル" class="w-full">
+                    <div class="p-4">
+                        <img src="https://ringo.under.jp/AIproject/student-results1-1.png" alt="受講生実績1詳細" class="w-full rounded">
+                        <p class="text-sm text-gray-500 text-center mt-2">🔍 タップで拡大</p>
+                    </div>
+                </div>
+                
+                <!-- Student Result 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://ringo.under.jp/AIproject/student-results2.jpg" alt="受講生実績2タイトル" class="w-full">
+                    <div class="p-4">
+                        <img src="https://ringo.under.jp/AIproject/student-results2-1.png" alt="受講生実績2詳細" class="w-full rounded">
+                        <p class="text-sm text-gray-500 text-center mt-2">🔍 タップで拡大</p>
+                    </div>
+                </div>
+                
+                <!-- Student Result 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://ringo.under.jp/AIproject/student-results3.jpg" alt="受講生実績3タイトル" class="w-full">
+                    <div class="p-4">
+                        <img src="https://ringo.under.jp/AIproject/student-results3-1.png" alt="受講生実績3詳細" class="w-full rounded">
+                        <p class="text-sm text-gray-500 text-center mt-2">🔍 タップで拡大</p>
+                    </div>
+                </div>
+                
+                <!-- Student Result 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://ringo.under.jp/AIproject/student-results4.jpg" alt="受講生実績4タイトル" class="w-full">
+                    <div class="p-4">
+                        <img src="https://ringo.under.jp/AIproject/student-results4-1.png" alt="受講生実績4詳細" class="w-full rounded">
+                        <p class="text-sm text-gray-500 text-center mt-2">🔍 タップで拡大</p>
+                    </div>
+                </div>
+                
+                <!-- Student Result 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://ringo.under.jp/AIproject/student-results5.jpg" alt="受講生実績5タイトル" class="w-full">
+                    <div class="p-4">
+                        <img src="https://ringo.under.jp/AIproject/student-results5-1.png" alt="受講生実績5詳細" class="w-full rounded">
+                        <p class="text-sm text-gray-500 text-center mt-2">🔍 タップで拡大</p>
+                    </div>
+                </div>
+                
+                <!-- Student Result 6 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://ringo.under.jp/AIproject/student-results6.jpg" alt="受講生実績6タイトル" class="w-full">
+                    <div class="p-4">
+                        <img src="https://ringo.under.jp/AIproject/student-results6-1.png" alt="受講生実績6詳細" class="w-full rounded">
+                        <p class="text-sm text-gray-500 text-center mt-2">🔍 タップで拡大</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <div class="bg-blue-50 rounded-lg p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-black mb-4">実績について詳しく知りたい方へ</h3>
+                    <p class="text-black mb-6">具体的な取り組み内容や進め方について、無料でご相談いただけます</p>
+                    <div class="line-green-btn text-white font-bold py-3 px-6 rounded-full inline-flex items-center">
+                        <i class="fab fa-line mr-2"></i>
+                        LINEで詳しく相談してみる
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="pt-20 pb-0 bg-gray-100">
+        <div class="container mx-auto px-6">
+            
+            
+            <div class="max-w-4xl mx-auto">
+                <img src="https://ringo.under.jp/AIproject/process.jpg" alt="販売までの流れ" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="pb-20 pt-0 bg-white">
+        <div class="container mx-auto px-6">
+            
+            <div class="max-w-4xl mx-auto mb-12">
+                <img src="https://ringo.under.jp/AIproject/support.jpg" alt="サポート内容" class="w-full rounded-lg shadow-lg">
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-green-50 rounded-lg p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-green-800 mb-4">サポート体制について詳しく知りたい方へ</h3>
+                    <p class="text-green-600 mb-6">安心してスタートできるよう、詳しいサポート内容をご説明します</p>
+                    <div class="line-green-btn text-white font-bold py-3 px-6 rounded-full inline-flex items-center">
+                        <i class="fab fa-line mr-2"></i>
+                        LINEでサポート詳細を聞く
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-black mb-6">プラン・料金</h2>
+                <p class="text-xl text-gray-600">
+                    あなたに最適なプランをお選びください
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <img src="https://ringo.under.jp/AIproject/plans.jpg" alt="プラン・料金" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Flow Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-black mb-6">お申し込みの流れ</h2>
+                <p class="text-xl text-gray-600">
+                    簡単3ステップでスタートできます
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <img src="https://ringo.under.jp/AIproject/flow.jpg" alt="お申し込みの流れ" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6 text-black">AI販売について相談してみませんか</h2>
+                <p class="text-xl mb-8 text-gray-600">
+                    無料相談であなたに最適なプランや進め方をご提案いたします
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-comments text-2xl text-gray-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">無料相談</h3>
+                        <p class="text-sm text-gray-600">お気軽にご相談ください</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-user-check text-2xl text-gray-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">個別対応</h3>
+                        <p class="text-sm text-gray-600">一人ひとりに合わせたサポート</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-rocket text-2xl text-gray-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">即日スタート</h3>
+                        <p class="text-sm text-gray-600">すぐに始められます</p>
+                    </div>
+                </div>
+                
+                <div class="line-green-btn text-white font-bold py-4 px-8 rounded-full text-lg inline-flex items-center hover:shadow-lg transition-all duration-300">
+                    <i class="fab fa-line mr-3"></i>
+                    LINEで無料相談を始める
+                </div>
+                
+                <div class="mt-8 text-sm text-gray-500">
+                    <p>📱 LINEで簡単に始められます</p>
+                    <p>⏰ 24時間以内にお返事いたします</p>
+                    <p>💬 お気軽にお声がけください</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4">AI販売プロジェクト</h3>
+            <div class="flex justify-center items-center space-x-6">
+                <div class="text-green-400 hover:text-green-300 transition-colors">
+                    <i class="fab fa-line text-2xl"></i>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-200 text-sm text-gray-600">
+                <p>&copy; 2024 AI販売プロジェクト. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
